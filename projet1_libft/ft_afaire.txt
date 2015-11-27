@@ -1,5 +1,0 @@
-•penser a remettre les flags dans le Makefile
-
-•Utilisation de la lib gcc (le main) -L(chemin vers fichier.a) -l(nom de la lib sans le lib…)
-
-•deTransformer tout les .c en .o commande ==>  OBJ=$(SRC:.c=.o)
