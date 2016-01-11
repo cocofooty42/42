@@ -6,7 +6,7 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 15:12:46 by cgirard           #+#    #+#             */
-/*   Updated: 2015/11/26 11:56:22 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/11 11:16:32 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	s1b = s1;
 	s2b = s2;
-	return(ft_strncmp((char*)s1b, (char*)s2b, n));
+	return (ft_strncmp((char*)s1b, (char*)s2b, n));
 }

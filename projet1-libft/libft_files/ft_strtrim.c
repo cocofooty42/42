@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/27 14:32:01 by cgirard           #+#    #+#             */
-/*   Updated: 2016/01/11 11:26:38 by cgirard          ###   ########.fr       */
+/*   Created: 2016/01/11 10:54:01 by cgirard           #+#    #+#             */
+/*   Updated: 2016/01/11 15:23:36 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_strclr(char *s)
+char	**ft_strtrim(char const *s)
 {
 	int		i;
+	char	*dest;
 
 	i = 0;
-	while (s[i] != '\0')
+	dest = malloc(sizeof(char) * len);
+	if (dest == NULL)
+		return (NULL);
+	while (s[i] != '\n')
 	{
-		s[i] = '\0';
-		i++;
+		if (s[i] == ' ' && s[i] == "\n" && s[i] == "\t" && s[i] == ",")
+			i++;
+		else
+		{
+			dest[i] = s[i];
+			i++;
+		}
 	}
+	return (dest);
 }

@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/27 14:32:01 by cgirard           #+#    #+#             */
-/*   Updated: 2016/01/11 11:26:38 by cgirard          ###   ########.fr       */
+/*   Created: 2016/01/11 11:22:25 by cgirard           #+#    #+#             */
+/*   Updated: 2016/01/11 11:23:38 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strclr(char *s)
+void	ft_putendl_fd(char const *s, int fd)
 {
-	int		i;
+	int i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
-		s[i] = '\0';
+		ft_putchar_fd(str[i], fd);
 		i++;
 	}
+	write(1, '\n', 1);
 }

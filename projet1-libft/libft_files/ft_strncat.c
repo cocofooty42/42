@@ -6,7 +6,7 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 17:30:20 by cgirard           #+#    #+#             */
-/*   Updated: 2015/11/26 16:46:44 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/11 11:31:07 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 	s2b = (char*)s2;
 	i = 0;
 	size_dest = ft_strlen(s1b);
-	while(i < n && s2b[i] != '\0')
+	while (i < n && s2b[i] != '\0')
 	{
 		s2b[size_dest + 1] = s1b[i];
 		i++;
 		size_dest++;
 	}
 	s2b[size_dest + 1] = '\0';
-	return((char*)s2);
+	return ((char*)s2);
 }

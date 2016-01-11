@@ -91,8 +91,6 @@ OBJ = ft_isprint.o\
 
 CFLAGS = -Wall -Wextra -Werror
 
-CFLAGS2 = -std=c99
-
 all: $(NAME)
 	
 $(NAME):	

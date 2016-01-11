@@ -6,7 +6,7 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 11:06:44 by cgirard           #+#    #+#             */
-/*   Updated: 2015/11/25 13:59:14 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/11 11:26:17 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	int		i;
 
 	i = 0;
-	while(s[i] != c)
+	while (s[i] != c)
 		i++;
 	return ((char*)s + i);
 }

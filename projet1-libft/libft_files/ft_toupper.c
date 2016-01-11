@@ -6,7 +6,7 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:32:27 by cgirard           #+#    #+#             */
-/*   Updated: 2015/11/24 15:37:08 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/11 11:33:33 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int		ft_toupper(int c)
 {
 	if (ft_islower(c))
-		return(c - 32);
+		return (c - 32);
 	else
 		return (c);
 }
