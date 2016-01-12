@@ -6,7 +6,7 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/18 11:22:38 by cgirard           #+#    #+#             */
-/*   Updated: 2016/01/11 11:49:30 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/12 13:48:35 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,13 +57,15 @@ void	ft_striter(char *s, void (*f)(char*));
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
+void	ft_strdel(char **as);
+
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int		ft_atoi(const char *str);
 
 int		ft_strcmp(const char *s1, const char *s2);
 
-int		ft_strlen(const char *str);
+size_t	ft_strlen(const char *str);
 
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 
@@ -89,9 +91,17 @@ int		ft_strequ(char const *s1, char const *s2);
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 
+char	*ft_strnew(size_t size);
+
+char	**ft_strsplit(char const *s, char c);
+
+char	*ft_strtrim(char const *s);
+
+char	*ft_strjoin(char const *s1, char const *s2);
+
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 
-char	*ft_strmap(char const *s, char(*f)(char*));
+char	*ft_strmap(char const *s, char(*f)(char));
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
@@ -101,7 +111,7 @@ char	*ft_strcat(char *dest, const char *src);
 
 char	*ft_strncat(char *s1, const char *s2, size_t n);
 
-char	*ft_strlcat(char *s1, const char *s2, size_t n);
+size_t	ft_strlcat(char *s1, const char *s2, size_t n);
 
 char	*ft_strrchr(const char *s, int c);
 
@@ -118,5 +128,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n);
 char	*ft_strstr(char *str, char *to_find);
 
 char	*ft_strupcase(char *str);
+
+char	*ft_itoa(int n);
 
 #endif

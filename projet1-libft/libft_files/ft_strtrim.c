@@ -6,22 +6,24 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/11 10:54:01 by cgirard           #+#    #+#             */
-/*   Updated: 2016/01/11 15:23:36 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/12 14:06:49 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	**ft_strtrim(char const *s)
+#include "libft.h"
+
+char	*ft_strtrim(char const *s)
 {
 	int		i;
 	char	*dest;
 
 	i = 0;
-	dest = malloc(sizeof(char) * len);
+	dest = malloc(sizeof(char) * ft_strlen(s));
 	if (dest == NULL)
 		return (NULL);
 	while (s[i] != '\n')
 	{
-		if (s[i] == ' ' && s[i] == "\n" && s[i] == "\t" && s[i] == ",")
+		if (s[i] == ' ' && s[i] == '\n' && s[i] == '\t' && s[i] == ',')
 			i++;
 		else
 		{

@@ -6,13 +6,13 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/08 22:50:57 by cgirard           #+#    #+#             */
-/*   Updated: 2015/11/24 12:49:20 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/12 12:13:38 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ia(char c)
+static	int		ia(char c)
 {
 	if (47 < c && c < 58)
 		return (1);
@@ -23,7 +23,7 @@ int		ia(char c)
 	return (0);
 }
 
-char	*ft_capitalize(char *str)
+char			*ft_capitalize(char *str)
 {
 	int		i;
 

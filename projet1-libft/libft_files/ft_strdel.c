@@ -6,21 +6,17 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/11 14:23:56 by cgirard           #+#    #+#             */
-/*   Updated: 2016/01/11 15:32:07 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/12 14:17:17 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_strdel(char **as)
+void	ft_strdel(char **as)
 {
-	int		i;
-	char	*inter;
-
-	i = 0;
-	inter = *as;
-	while (inter != '\0')
+	if (as != NULL)
 	{
-
+		free(*as);
+		*as = NULL;
 	}
 }

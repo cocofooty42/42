@@ -6,7 +6,7 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 19:11:21 by cgirard           #+#    #+#             */
-/*   Updated: 2016/01/11 16:43:00 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/12 14:12:43 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,18 +25,18 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	else
 	{
-		while (s1[i++] != "\0")
+		while (s1[i++] != '\0')
 		{
 			dest[j] = s1[i];
 			j++;
 		}
 		i = 0;
-		while (s2[i++] != "\0")
+		while (s2[i++] != '\0')
 		{
 			dest[j] = s2[i];
 			j++;
 		}
-		dest[i + 1] = "\0";
+		dest[i + 1] = '\0';
 		return (dest);
 	}
 }

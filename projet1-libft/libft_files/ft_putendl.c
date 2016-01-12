@@ -6,7 +6,7 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/08 17:53:38 by cgirard           #+#    #+#             */
-/*   Updated: 2016/01/11 11:23:57 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/12 13:56:05 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	ft_putendl(char const *s)
 	int i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		ft_putchar(str[i]);
+		ft_putchar(s[i]);
 		i++;
 	}
-	write(1, '\n', 1);
+	write(1, "\n", 1);
 }

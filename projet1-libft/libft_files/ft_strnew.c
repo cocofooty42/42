@@ -6,16 +6,16 @@
 /*   By: cgirard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 17:38:33 by cgirard           #+#    #+#             */
-/*   Updated: 2016/01/11 15:22:12 by cgirard          ###   ########.fr       */
+/*   Updated: 2016/01/12 14:19:55 by cgirard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+char			*ft_strnew(size_t size)
 {
-	char	*dest;
-	int		i;
+	char		*dest;
+	size_t		i;
 
 	dest = malloc(sizeof(char) * (size + 1));
 	i = 0;

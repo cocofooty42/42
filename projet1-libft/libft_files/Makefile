@@ -6,7 +6,7 @@
 #    By: cgirard <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 16:40:04 by cgirard           #+#    #+#              #
-#    Updated: 2015/11/26 14:33:46 by cgirard          ###   ########.fr        #
+#    Updated: 2016/01/12 14:45:35 by cgirard          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,28 @@ SRC = ft_isprint.c\
 	ft_strncmp.c\
 	ft_islower.c\
 	ft_putstr.c\
-	ft_strncpy.c
+	ft_strncpy.c\
+	ft_itoa.c\
+	ft_memalloc.c\
+	ft_memdel.c\
+	ft_putchar_fd.c\
+	ft_putendl.c\
+	ft_putendl_fd.c\
+	ft_putstr_fd.c\
+	ft_strclr.c\
+	ft_strdel.c\
+	ft_strequ.c\
+	ft_striter.c\
+	ft_striteri.c\
+	ft_strjoin.c\
+	ft_strlcat.c\
+	ft_strmap.c\
+	ft_strmapi.c\
+	ft_strnequ.c\
+	ft_strnew.c\
+	ft_strsplit.c\
+	ft_strsub.c\
+	ft_strtrim.c
 
 OBJ = ft_isprint.o\
 	ft_rot42.o\
@@ -87,16 +108,37 @@ OBJ = ft_isprint.o\
 	ft_strncmp.o\
 	ft_islower.o\
 	ft_putstr.o\
-	ft_strncpy.o
+	ft_strncpy.o\
+	ft_itoa.o\
+	ft_memalloc.o\
+	ft_memdel.o\
+	ft_putchar_fd.o\
+	ft_putendl.o\
+	ft_putendl_fd.o\
+	ft_putstr_fd.o\
+	ft_strclr.o\
+	ft_strdel.o\
+	ft_strequ.o\
+	ft_striter.o\
+	ft_striteri.o\
+	ft_strjoin.o\
+	ft_strlcat.o\
+	ft_strmap.o\
+	ft_strmapi.o\
+	ft_strnequ.o\
+	ft_strnew.o\
+	ft_strsplit.o\
+	ft_strsub.o\
+	ft_strtrim.o
 
 CFLAGS = -Wall -Wextra -Werror
-
-all: $(NAME)
 	
 $(NAME):	
-	@gcc -c $(CFLAGS) $(SRC)
+	@gcc $(CFLAGS) -c $(SRC)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
+
+all: $(NAME)
 
 clean:
 		@rm -f $(OBJ)
